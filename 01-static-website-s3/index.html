@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Muhammad Masab - Computer Science Student & Aspiring Cloud Engineer Portfolio. Specializing in AWS, DevOps, and Web Development.">
+  <meta name="keywords" content="Muhammad Masab, Cloud Engineer, AWS, KUST, Computer Science, DevOps, Portfolio, S3 Hosting">
+  <meta name="author" content="Muhammad Masab">
+  <title>Muhammad Masab | Aspiring Cloud Engineer & CS Student</title>
+
+  <!-- External Styles & Icon Fonts -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Relative Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       HEADER / STICKY NAVIGATION
+       ========================================================================== -->
+  <header class="header" id="header">
+    <div class="container nav-container">
+      <a href="#hero" class="logo" id="nav-logo">
+        <i class="fa-solid fa-cloud"></i> <span>Masab</span>.Cloud/&gt;
+      </a>
+
+      <!-- Navigation Links -->
+      <nav>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#hero" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#cloud" class="nav-link">Cloud AWS</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#journey" class="nav-link">Journey</a></li>
+          <li><a href="#certifications" class="nav-link">Certifications</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav Action Controls -->
+      <div class="nav-controls" style="display: flex; align-items: center; gap: 0.75rem;">
+        <button class="theme-toggle-btn" id="theme-toggle-btn" aria-label="Toggle Light/Dark Theme" title="Toggle Light/Dark Theme">
+          <i class="fa-solid fa-sun"></i>
+        </button>
+
+        <!-- Mobile Hamburger Button -->
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       1. HERO SECTION
+       ========================================================================== -->
+  <section class="hero" id="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="pulse-dot"></span>
+          <span>Available for Cloud & DevOps Opportunities</span>
+        </div>
+        
+        <h1 class="hero-title">
+          Hi, I'm <span class="gradient-text">Muhammad Masab</span>
+        </h1>
+        
+        <h2 class="hero-subtitle">
+          <i class="fa-solid fa-cloud-bolt"></i> Computer Science Student | Aspiring Cloud Engineer
+        </h2>
+        
+        <p class="hero-description">
+          Passionate BS Computer Science student at Kohat University of Science & Technology (KUST). 
+          Dedicated to mastering AWS Cloud Architecture, DevOps automation, Linux administration, and modern software development.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary" id="hero-btn-projects">
+            <i class="fa-solid fa-folder-open"></i> View My Projects
+          </a>
+          <a href="#contact" class="btn btn-secondary" id="hero-btn-contact">
+            <i class="fa-solid fa-paper-plane"></i> Contact Me
+          </a>
+        </div>
+
+        <div class="hero-meta">
+          <div class="meta-item">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <span>BS Computer Science @ KUST</span>
+          </div>
+          <div class="meta-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Pakistan</span>
+          </div>
+          <div class="meta-item">
+            <i class="fa-brands fa-aws"></i>
+            <span>AWS Focused</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cloud Visual Graphic -->
+      <div class="hero-visual">
+        <div class="cloud-card glass-card">
+          <div class="cloud-card-header">
+            <div class="terminal-dots">
+              <span class="dot dot-red"></span>
+              <span class="dot dot-yellow"></span>
+              <span class="dot dot-green"></span>
+            </div>
+            <div class="card-status">
+              <i class="fa-solid fa-circle-check"></i> AWS S3 Host Status: Active
+            </div>
+          </div>
+          
+          <div class="cloud-nodes">
+            <div class="node-item">
+              <div class="node-icon"><i class="fa-brands fa-aws"></i></div>
+              <div class="node-title">Amazon S3</div>
+              <div class="node-sub">Static Website</div>
+            </div>
+            <div class="node-item">
+              <div class="node-icon"><i class="fa-solid fa-network-wired"></i></div>
+              <div class="node-title">CloudFront</div>
+              <div class="node-sub">Global CDN</div>
+            </div>
+            <div class="node-item">
+              <div class="node-icon"><i class="fa-solid fa-shield-halved"></i></div>
+              <div class="node-title">AWS IAM</div>
+              <div class="node-sub">Role Security</div>
+            </div>
+            <div class="node-item">
+              <div class="node-icon"><i class="fa-solid fa-server"></i></div>
+              <div class="node-title">EC2 / Linux</div>
+              <div class="node-sub">Cloud Servers</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       2. ABOUT ME SECTION
+       ========================================================================== -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fa-solid fa-user"></i> Professional Profile</span>
+        <h2 class="section-title">About Me</h2>
+        <p class="section-subtitle">Bridging Software Engineering with Modern Cloud Infrastructure</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text glass-card" style="padding: 2rem;">
+          <p>
+            I am <strong>Muhammad Masab</strong>, a dedicated Computer Science student at <strong>Kohat University of Science & Technology (KUST)</strong>, Pakistan. My academic journey has given me a strong foundation in core computer science principles, software development, data structures, and computer networking.
+          </p>
+          <p>
+            My true career passion lies in <strong>Cloud Computing and AWS Infrastructure</strong>. I am fascinated by how modern cloud platforms enable scalable, highly available, and secure digital applications globally. I actively practice deploying static and dynamic web solutions, building cloud storage configurations, and exploring containerized environments.
+          </p>
+          <p>
+            My overarching career goal is to become a professional <strong>Cloud Engineer & DevOps Practitioner</strong>, helping organizations design, automate, and optimize robust cloud environments using AWS best practices.
+          </p>
+        </div>
+
+        <div class="about-highlights">
+          <div class="highlight-box glass-card">
+            <div class="highlight-icon"><i class="fa-solid fa-laptop-code"></i></div>
+            <div>
+              <div class="highlight-title">CS Background</div>
+              <div class="highlight-desc">Strong fundamentals in algorithms, networking, & OOP at KUST.</div>
+            </div>
+          </div>
+
+          <div class="highlight-box glass-card">
+            <div class="highlight-icon"><i class="fa-brands fa-aws"></i></div>
+            <div>
+              <div class="highlight-title">AWS & Cloud Focus</div>
+              <div class="highlight-desc">Hands-on experience with S3 hosting, IAM, EC2, & CloudFront.</div>
+            </div>
+          </div>
+
+          <div class="highlight-box glass-card">
+            <div class="highlight-icon"><i class="fa-solid fa-gears"></i></div>
+            <div>
+              <div class="highlight-title">DevOps Mindset</div>
+              <div class="highlight-desc">Emphasis on Linux CLI, Git version control, and CI/CD pipelines.</div>
+            </div>
+          </div>
+
+          <div class="highlight-box glass-card">
+            <div class="highlight-icon"><i class="fa-solid fa-bullseye"></i></div>
+            <div>
+              <div class="highlight-title">Career Goal</div>
+              <div class="highlight-desc">Aspiring to become an AWS Certified Cloud Engineer.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       3. SKILLS SECTION
+       ========================================================================== -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fa-solid fa-code-compare"></i> Technical Expertise</span>
+        <h2 class="section-title">Skills & Capabilities</h2>
+        <p class="section-subtitle">A breakdown of my technical stack across Cloud, Web Development, and DevOps</p>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Category 1: Cloud & DevOps -->
+        <div class="skill-category glass-card">
+          <h3 class="category-title">
+            <i class="fa-solid fa-cloud"></i> Cloud & Infrastructure
+          </h3>
+          <div class="skill-list">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name"><i class="fa-brands fa-aws"></i> AWS Services</span>
+                <span>85%</span>
+              </div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" data-progress="85%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name"><i class="fa-solid fa-network-wired"></i> Cloud Computing</span>
+                <span>88%</span>
+              </div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" data-progress="88%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name"><i class="fa-solid fa-gears"></i> DevOps Concepts</span>
+                <span>78%</span>
+              </div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" data-progress="78%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name"><i class="fa-brands fa-linux"></i> Linux Administration</span>
+                <span>82%</span>
+              </div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" data-progress="82%"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 2: Web & Databases -->
+        <div class="skill-category glass-card">
+          <h3 class="category-title">
+            <i class="fa-solid fa-code"></i> Web & Full-Stack Development
+          </h3>
+          <div class="skill-list">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name"><i class="fa-brands fa-html5"></i> HTML / CSS / JavaScript</span>
+                <span>90%</span>
+              </div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" data-progress="90%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name"><i class="fa-brands fa-react"></i> React.js</span>
+                <span>80%</span>
+              </div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" data-progress="80%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name"><i class="fa-brands fa-node-js"></i> Node.js & Express</span>
+                <span>75%</span>
+              </div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" data-progress="75%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name"><i class="fa-solid fa-database"></i> MongoDB & Databases</span>
+                <span>75%</span>
+              </div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" data-progress="75%"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 3: Tools & Fundamentals -->
+        <div class="skill-category glass-card">
+          <h3 class="category-title">
+            <i class="fa-solid fa-toolbox"></i> Tools & Core CS
+          </h3>
+          <div class="skill-list">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name"><i class="fa-brands fa-git-alt"></i> Git & GitHub</span>
+                <span>88%</span>
+              </div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" data-progress="88%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name"><i class="fa-solid fa-sitemap"></i> Computer Networking</span>
+                <span>84%</span>
+              </div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" data-progress="84%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name"><i class="fa-solid fa-diagram-project"></i> Data Structures</span>
+                <span>80%</span>
+              </div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" data-progress="80%"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Skill Pills Cloud -->
+      <div class="skills-badge-cloud">
+        <span class="skill-pill"><i class="fa-brands fa-aws"></i> AWS S3</span>
+        <span class="skill-pill"><i class="fa-solid fa-bolt"></i> CloudFront</span>
+        <span class="skill-pill"><i class="fa-solid fa-user-shield"></i> AWS IAM</span>
+        <span class="skill-pill"><i class="fa-solid fa-server"></i> AWS EC2</span>
+        <span class="skill-pill"><i class="fa-brands fa-linux"></i> Linux CLI</span>
+        <span class="skill-pill"><i class="fa-brands fa-git-alt"></i> Git</span>
+        <span class="skill-pill"><i class="fa-brands fa-html5"></i> HTML5</span>
+        <span class="skill-pill"><i class="fa-brands fa-css3-alt"></i> CSS3</span>
+        <span class="skill-pill"><i class="fa-brands fa-js"></i> JavaScript</span>
+        <span class="skill-pill"><i class="fa-brands fa-react"></i> React</span>
+        <span class="skill-pill"><i class="fa-brands fa-node-js"></i> Node.js</span>
+        <span class="skill-pill"><i class="fa-solid fa-database"></i> MongoDB</span>
+        <span class="skill-pill"><i class="fa-solid fa-network-wired"></i> TCP/IP & DNS</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       4. CLOUD COMPUTING DEDICATED SECTION
+       ========================================================================== -->
+  <section class="section cloud-section" id="cloud">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fa-brands fa-aws"></i> Cloud Specialization</span>
+        <h2 class="section-title">Cloud Computing & AWS Architecture</h2>
+        <p class="section-subtitle">Hands-on experience with core cloud services, hosting, security, and deployment</p>
+      </div>
+
+      <div class="cloud-services-grid">
+        <!-- Service 1: Amazon S3 -->
+        <div class="service-card glass-card">
+          <div class="service-header">
+            <div class="service-icon"><i class="fa-solid fa-bucket"></i></div>
+            <h3 class="service-title">Amazon S3</h3>
+          </div>
+          <p class="service-desc">
+            Configuring Object Storage buckets, static website hosting, bucket policies, access control lists (ACLs), CORS configuration, and S3 lifecycle rules.
+          </p>
+          <div class="service-features">
+            <span class="feature-tag">Static Hosting</span>
+            <span class="feature-tag">Bucket Policy</span>
+            <span class="feature-tag">Web Distribution</span>
+          </div>
+        </div>
+
+        <!-- Service 2: CloudFront -->
+        <div class="service-card glass-card">
+          <div class="service-header">
+            <div class="service-icon"><i class="fa-solid fa-network-wired"></i></div>
+            <h3 class="service-title">Amazon CloudFront</h3>
+          </div>
+          <p class="service-desc">
+            Setting up Content Delivery Network (CDN) distributions, custom domain routing, SSL/TLS certificates via AWS Certificate Manager, and low-latency edge caching.
+          </p>
+          <div class="service-features">
+            <span class="feature-tag">CDN Caching</span>
+            <span class="feature-tag">Edge Locations</span>
+            <span class="feature-tag">HTTPS Security</span>
+          </div>
+        </div>
+
+        <!-- Service 3: AWS IAM -->
+        <div class="service-card glass-card">
+          <div class="service-header">
+            <div class="service-icon"><i class="fa-solid fa-user-shield"></i></div>
+            <h3 class="service-title">AWS IAM</h3>
+          </div>
+          <p class="service-desc">
+            Implementing Identity & Access Management policies, defining principle of least privilege, role delegation, MFA setup, and managing programmatic access keys.
+          </p>
+          <div class="service-features">
+            <span class="feature-tag">Least Privilege</span>
+            <span class="feature-tag">IAM Roles</span>
+            <span class="feature-tag">Policy JSON</span>
+          </div>
+        </div>
+
+        <!-- Service 4: AWS EC2 -->
+        <div class="service-card glass-card">
+          <div class="service-header">
+            <div class="service-icon"><i class="fa-solid fa-server"></i></div>
+            <h3 class="service-title">Amazon EC2</h3>
+          </div>
+          <p class="service-desc">
+            Provisioning Linux virtual servers, configuring Security Groups & Key Pairs, SSH administration, web server installation (Nginx/Apache), and storage volume attaching.
+          </p>
+          <div class="service-features">
+            <span class="feature-tag">Linux Instances</span>
+            <span class="feature-tag">Security Groups</span>
+            <span class="feature-tag">SSH Config</span>
+          </div>
+        </div>
+
+        <!-- Service 5: Cloud Architecture -->
+        <div class="service-card glass-card">
+          <div class="service-header">
+            <div class="service-icon"><i class="fa-solid fa-diagram-project"></i></div>
+            <h3 class="service-title">Cloud Architecture</h3>
+          </div>
+          <p class="service-desc">
+            Designing highly available and cost-effective cloud architectures following the AWS Well-Architected Framework pillars: Security, Reliability, and Operational Excellence.
+          </p>
+          <div class="service-features">
+            <span class="feature-tag">Well-Architected</span>
+            <span class="feature-tag">High Availability</span>
+            <span class="feature-tag">Cost Control</span>
+          </div>
+        </div>
+
+        <!-- Service 6: Deployment & Infrastructure -->
+        <div class="service-card glass-card">
+          <div class="service-header">
+            <div class="service-icon"><i class="fa-solid fa-cloud-arrow-up"></i></div>
+            <h3 class="service-title">Deployment & DevOps</h3>
+          </div>
+          <p class="service-desc">
+            Automating deployments using AWS CLI scripts, basic Infrastructure as Code (IaC) concepts, version-controlled workflows with Git, and continuous delivery setups.
+          </p>
+          <div class="service-features">
+            <span class="feature-tag">AWS CLI</span>
+            <span class="feature-tag">Git Pipelines</span>
+            <span class="feature-tag">Automated Sync</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cloud Hands-On Note Callout -->
+      <div class="cloud-callout glass-card">
+        <div class="callout-text">
+          <h4><i class="fa-solid fa-lightbulb" style="color: var(--aws-orange);"></i> Hands-On Cloud Practice</h4>
+          <p>
+            I believe the best way to master cloud engineering is by building real projects. This portfolio website itself serves as a live demonstration of static hosting architecture on Amazon S3.
+          </p>
+        </div>
+        <a href="#projects" class="btn btn-primary" style="white-space: nowrap;">Explore Cloud Projects</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       5. PROJECTS SECTION
+       ========================================================================== -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fa-solid fa-folder-open"></i> Portfolio Work</span>
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-subtitle">Real-world applications showcasing Web Development, AI, and Cloud Infrastructure</p>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project A: Personal Portfolio -->
+        <div class="project-card glass-card">
+          <div class="project-banner">
+            <div class="project-badge-icon"><i class="fa-brands fa-aws"></i></div>
+            <span class="project-status-tag">Live on S3</span>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Personal Portfolio Website</h3>
+            <p class="project-desc">
+              A high-performance, responsive static portfolio website created for a cloud computing project. Engineered using clean HTML5, CSS3, and JavaScript, hosted directly on an Amazon S3 bucket with static website hosting enabled.
+            </p>
+            <div class="project-tech">
+              <span class="tech-pill">HTML5</span>
+              <span class="tech-pill">CSS3</span>
+              <span class="tech-pill">JavaScript</span>
+              <span class="tech-pill">AWS S3</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://github.com/MuhammadMasab" target="_blank" rel="noopener" class="btn btn-secondary btn-sm" id="project-a-github">
+                <i class="fa-brands fa-github"></i> GitHub
+              </a>
+              <a href="#hero" class="btn btn-primary btn-sm" id="project-a-demo">
+                <i class="fa-solid fa-external-link"></i> Live Demo
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project B: CSS Genius -->
+        <div class="project-card glass-card">
+          <div class="project-banner">
+            <div class="project-badge-icon"><i class="fa-solid fa-brain"></i></div>
+            <span class="project-status-tag">Full-Stack AI</span>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">CSS Genius</h3>
+            <p class="project-desc">
+              An AI-powered educational assistance platform created for CSS (Central Superior Services) exam aspirants in Pakistan. Integrates smart evaluation algorithms, practice quizzes, and full-stack React/Node.js architecture.
+            </p>
+            <div class="project-tech">
+              <span class="tech-pill">React.js</span>
+              <span class="tech-pill">Node.js</span>
+              <span class="tech-pill">MongoDB</span>
+              <span class="tech-pill">AI Integration</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://github.com/MuhammadMasab" target="_blank" rel="noopener" class="btn btn-secondary btn-sm" id="project-b-github">
+                <i class="fa-brands fa-github"></i> GitHub
+              </a>
+              <a href="#projects" class="btn btn-primary btn-sm" id="project-b-demo">
+                <i class="fa-solid fa-external-link"></i> Live Demo
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project C: AWS Serverless Architecture (Placeholder) -->
+        <div class="project-card glass-card">
+          <div class="project-banner">
+            <div class="project-badge-icon"><i class="fa-solid fa-cloud-arrow-up"></i></div>
+            <span class="project-status-tag">Cloud Prototype</span>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">AWS Serverless Microservices</h3>
+            <p class="project-desc">
+              A prototype cloud backend featuring Amazon API Gateway HTTP endpoints, AWS Lambda event handlers, and DynamoDB for serverless data processing without server management.
+            </p>
+            <div class="project-tech">
+              <span class="tech-pill">AWS Lambda</span>
+              <span class="tech-pill">API Gateway</span>
+              <span class="tech-pill">DynamoDB</span>
+              <span class="tech-pill">Python</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://github.com/MuhammadMasab" target="_blank" rel="noopener" class="btn btn-secondary btn-sm" id="project-c-github">
+                <i class="fa-brands fa-github"></i> GitHub
+              </a>
+              <a href="#projects" class="btn btn-primary btn-sm" id="project-c-demo">
+                <i class="fa-solid fa-external-link"></i> Live Demo
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       6. EDUCATION SECTION
+       ========================================================================== -->
+  <section class="section" id="education">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fa-solid fa-graduation-cap"></i> Academic Background</span>
+        <h2 class="section-title">Education</h2>
+        <p class="section-subtitle">Building theoretical rigor and core Computer Science excellence</p>
+      </div>
+
+      <div class="timeline">
+        <!-- Education Timeline Item -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass-card">
+            <span class="timeline-date">2022 - PRESENT</span>
+            <h3 class="timeline-title">BS Computer Science</h3>
+            <h4 class="timeline-institution">Kohat University of Science & Technology (KUST)</h4>
+            <p class="timeline-desc">
+              Pursuing a Bachelor of Science degree in Computer Science with a strong focus on cloud architecture, software engineering principles, computer networks, and operating systems. Engaging in hands-on departmental technical projects.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       7. EXPERIENCE / LEARNING JOURNEY
+       ========================================================================== -->
+  <section class="section" id="journey">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fa-solid fa-route"></i> Career Progression</span>
+        <h2 class="section-title">My Learning Journey</h2>
+        <p class="section-subtitle">How I progressed from web programming to cloud & DevOps engineering</p>
+      </div>
+
+      <div class="timeline">
+        <!-- Step 1 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass-card">
+            <span class="timeline-date">STAGE 01</span>
+            <h3 class="timeline-title">Web Development Fundamentals</h3>
+            <h4 class="timeline-institution">HTML5, CSS3 & JavaScript</h4>
+            <p class="timeline-desc">
+              Mastered foundational web technologies, layout systems, responsive UI principles, semantic markup, and DOM manipulation.
+            </p>
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass-card">
+            <span class="timeline-date">STAGE 02</span>
+            <h3 class="timeline-title">Full-Stack Web Development</h3>
+            <h4 class="timeline-institution">React, Node.js & Databases</h4>
+            <p class="timeline-desc">
+              Built dynamic web applications using modern JavaScript frameworks, REST APIs, and MongoDB database integrations like the CSS Genius platform.
+            </p>
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass-card">
+            <span class="timeline-date">STAGE 03</span>
+            <h3 class="timeline-title">Cloud Computing Exploration</h3>
+            <h4 class="timeline-institution">Virtualization & Cloud Concepts</h4>
+            <p class="timeline-desc">
+              Discovered cloud architecture benefits, virtualization, remote server management, IAM policies, and cloud network topologies.
+            </p>
+          </div>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass-card">
+            <span class="timeline-date">STAGE 04</span>
+            <h3 class="timeline-title">AWS Infrastructure & S3 Hosting</h3>
+            <h4 class="timeline-institution">Amazon Web Services (AWS)</h4>
+            <p class="timeline-desc">
+              Hands-on experience deploying static website hosting on Amazon S3, configuring CloudFront distributions, managing IAM credentials, and launching EC2 instances.
+            </p>
+          </div>
+        </div>
+
+        <!-- Step 5 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass-card">
+            <span class="timeline-date">STAGE 05</span>
+            <h3 class="timeline-title">DevOps & Cloud Engineering</h3>
+            <h4 class="timeline-institution">Continuous Growth & Future Focus</h4>
+            <p class="timeline-desc">
+              Actively mastering Linux administration, Git automation, AWS CLI scripting, containerization, and preparing for professional AWS Certifications.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       8. CERTIFICATIONS / ACHIEVEMENTS
+       ========================================================================== -->
+  <section class="section" id="certifications">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fa-solid fa-award"></i> Milestones</span>
+        <h2 class="section-title">Certifications & Achievements</h2>
+        <p class="section-subtitle">Technical training, continuous learning milestones, and future certification goals</p>
+      </div>
+
+      <div class="cert-grid">
+        <!-- Card 1 -->
+        <div class="cert-card glass-card">
+          <div class="cert-icon-wrapper"><i class="fa-brands fa-aws"></i></div>
+          <h3 class="cert-title">AWS Cloud Learning Path</h3>
+          <div class="cert-issuer">AWS Skill Builder / Self-Paced Labs</div>
+          <span class="cert-status">In Progress</span>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="cert-card glass-card">
+          <div class="cert-icon-wrapper"><i class="fa-solid fa-cloud-arrow-up"></i></div>
+          <h3 class="cert-title">AWS S3 Static Cloud Project</h3>
+          <div class="cert-issuer">Hands-on Cloud Project</div>
+          <span class="cert-status">Achieved</span>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="cert-card glass-card">
+          <div class="cert-icon-wrapper"><i class="fa-solid fa-code"></i></div>
+          <h3 class="cert-title">Full-Stack Web Development</h3>
+          <div class="cert-issuer">Technical Training & Projects</div>
+          <span class="cert-status">Achieved</span>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="cert-card glass-card">
+          <div class="cert-icon-wrapper"><i class="fa-solid fa-certificate"></i></div>
+          <h3 class="cert-title">AWS Solutions Architect - Associate</h3>
+          <div class="cert-issuer">Amazon Web Services Target</div>
+          <span class="cert-status in-progress">Goal 2026</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       9. CONTACT SECTION
+       ========================================================================== -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fa-solid fa-paper-plane"></i> Get In Touch</span>
+        <h2 class="section-title">Contact Me</h2>
+        <p class="section-subtitle">Let's discuss Cloud Architecture, AWS Projects, or Collaboration</p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Contact Details -->
+        <div class="contact-info-cards">
+          <!-- Email Card -->
+          <div class="contact-info-card glass-card">
+            <div class="info-left">
+              <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div class="info-details">
+                <h4>Email</h4>
+                <p id="email-text">muhammad.masab@example.com</p>
+              </div>
+            </div>
+            <button class="copy-btn" id="copy-email-btn" title="Copy Email">
+              <i class="fa-regular fa-copy"></i>
+            </button>
+          </div>
+
+          <!-- Location Card -->
+          <div class="contact-info-card glass-card">
+            <div class="info-left">
+              <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div class="info-details">
+                <h4>Location</h4>
+                <p>Pakistan</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- GitHub Card -->
+          <div class="contact-info-card glass-card">
+            <div class="info-left">
+              <div class="info-icon"><i class="fa-brands fa-github"></i></div>
+              <div class="info-details">
+                <h4>GitHub</h4>
+                <p>github.com/MuhammadMasab</p>
+              </div>
+            </div>
+            <a href="https://github.com/MuhammadMasab" target="_blank" rel="noopener" class="copy-btn">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+
+          <!-- LinkedIn Card -->
+          <div class="contact-info-card glass-card">
+            <div class="info-left">
+              <div class="info-icon"><i class="fa-brands fa-linkedin"></i></div>
+              <div class="info-details">
+                <h4>LinkedIn</h4>
+                <p>linkedin.com/in/muhammad-masab</p>
+              </div>
+            </div>
+            <a href="https://linkedin.com" target="_blank" rel="noopener" class="copy-btn">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Contact Form Card -->
+        <!-- 
+          NOTE FOR AWS DEPLOYMENT:
+          This website is built entirely as a static frontend suitable for AWS S3 Hosting. 
+          To add backend contact form processing on AWS in the future, connect this form to:
+          1. AWS API Gateway + AWS Lambda function + Amazon SES (Simple Email Service).
+          2. Or a serverless third-party endpoint service (e.g., Formspree / Web3Forms).
+        -->
+        <div class="contact-form-card glass-card">
+          <form id="contact-form">
+            <div class="form-group">
+              <label for="contact-name" class="form-label">Your Name</label>
+              <input type="text" id="contact-name" class="form-input" placeholder="e.g. John Doe" required>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-email" class="form-label">Your Email</label>
+              <input type="email" id="contact-email" class="form-input" placeholder="e.g. john@example.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-subject" class="form-label">Subject</label>
+              <input type="text" id="contact-subject" class="form-input" placeholder="Cloud Project / Opportunity" required>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-message" class="form-label">Message</label>
+              <textarea id="contact-message" class="form-textarea" placeholder="Write your message here..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;" id="submit-form-btn">
+              <i class="fa-solid fa-paper-plane"></i> Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       10. FOOTER
+       ========================================================================== -->
+  <footer class="footer" id="footer">
+    <div class="container footer-content">
+      <a href="#hero" class="logo">
+        <i class="fa-solid fa-cloud"></i> <span>Muhammad Masab</span>
+      </a>
+      <p style="color: var(--text-secondary); font-size: 0.95rem;">
+        Computer Science Student | Aspiring Cloud Engineer
+      </p>
+
+      <div class="footer-socials">
+        <a href="https://github.com/MuhammadMasab" target="_blank" rel="noopener" class="social-icon" title="GitHub">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-icon" title="LinkedIn">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="mailto:muhammad.masab@example.com" class="social-icon" title="Email">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+      </div>
+
+      <p class="copyright">
+        © 2026 Muhammad Masab. Designed for Amazon S3 Static Hosting.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Toast Notification Container -->
+  <div class="toast" id="toast">
+    <i class="fa-solid fa-circle-check"></i>
+    <span id="toast-message">Message sent successfully!</span>
+  </div>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="back-to-top" aria-label="Back to Top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- Relative JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
